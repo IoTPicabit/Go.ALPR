@@ -1,0 +1,29 @@
+{
+  "plc": {
+    "IPAddress": "192.168.100.253",
+    "Port": 44818,
+    "ProcessorSlot": 1,
+    "RoutePath": "1,0",
+    "CIPConnectionSize": 508,
+    "DisableMultiServiceRequest": false,
+    "DisableSubscriptions": false,
+    "PollRateOverride": 500,
+    "TimeOut": 4000,
+    "UseOmronRead": false,
+
+    "TagConfirmacion": "PPPM", //Tag tipo BOOL que se pondrá a True/1 cuando se escriba un albarán
+    "Campos": [
+      {
+        "CampoBD": "IdOperacion",
+        "CampoPLC": "TEST",
+        "LongitudPLC": 0
+      },
+      {
+        "CampoBD": "Matricula",
+        "CampoPLC": "prueba_001.Path",
+        "LongitudPLC": 82
+      }
+      //.....
+    ] 
+  }  
+}

@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Matricula">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Matricula.Value, "Albaran")</Value>
+                <Style>
+                  <FontWeight>=IIf(First(Fields!MatriculaEntradaManual.Value, "Albaran"), "Bold", "Default")</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Matricula</rd:DefaultName>
+        <Top>1.43524cm</Top>
+        <Left>3.83333cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Matrícula:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>1.43524cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.40501cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Remolque">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Remolque.Value, "Albaran")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Remolque</rd:DefaultName>
+        <Top>2.17635cm</Top>
+        <Left>3.84428cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Remolque:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox3</rd:DefaultName>
+        <Top>2.17635cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.6cm</Height>
+        <Width>2.5cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="PesoEntrada">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!PesoEntrada.Value, "Albaran")</Value>
+                <Style>
+                  <FontWeight>=IIf(First(Fields!PesoEntradaManual.Value, "Albaran"), "Bold", "Default")</FontWeight>
+                  <Format>#,0;(#,0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>PesoEntrada</rd:DefaultName>
+        <Top>8.78926cm</Top>
+        <Left>3.75182cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="PesoSalida">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!PesoSalida.Value, "Albaran")</Value>
+                <Style>
+                  <FontWeight>=IIf(First(Fields!PesoSalidaManual.Value, "Albaran"), "Bold", "Default")</FontWeight>
+                  <Format>#,0;(#,0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>PesoSalida</rd:DefaultName>
+        <Top>8.78926cm</Top>
+        <Left>9.45669cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Peso entrada (Kg.):</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>8.78926cm</Top>
+        <Left>0.24098cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.40501cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Peso salida (Kg.):</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>8.78926cm</Top>
+        <Left>6.29523cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.05563cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Peso neto (Kg.):</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Top>8.78926cm</Top>
+        <Left>11.80738cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.26388cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="PesoNeto">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Abs(First(Fields!PesoEntrada.Value, "Albaran")-First(Fields!PesoSalida.Value, "Albaran"))</Value>
+                <Style>
+                  <Format>#,0;(#,0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>8.78926cm</Top>
+        <Left>15.1771cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Conductor:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox11</rd:DefaultName>
+        <Top>0.72941cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.6cm</Height>
+        <Width>3.40501cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Conductor">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Conductor.Value, "Albaran")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Conductor</rd:DefaultName>
+        <Top>0.72941cm</Top>
+        <Left>3.84428cm</Left>
+        <Height>0.6cm</Height>
+        <Width>13.2821cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="RectanguloEntrada">
+        <ReportItems>
+          <Image Name="Camara1Entrada">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara1Entrada.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12687cm</Top>
+            <Left>0.04749cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <Visibility>
+              <Hidden>=First(Fields!Camara1Entrada.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Entrada cámara 1</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Camara2Entrada">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara2Entrada.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12833cm</Top>
+            <Left>5.64514cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <ZIndex>1</ZIndex>
+            <Visibility>
+              <Hidden>=First(Fields!Camara2Entrada.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Entrada cámara 2</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Camara3Entrada">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara3Entrada.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12833cm</Top>
+            <Left>11.21569cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <ZIndex>2</ZIndex>
+            <Visibility>
+              <Hidden>=First(Fields!Camara3Entrada.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Entrada cámara 3</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>11.20634cm</Top>
+        <Left>0.39974cm</Left>
+        <Height>3.34667cm</Height>
+        <Width>16.79027cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Entrada:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>10.53578cm</Top>
+        <Left>0.39974cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.78562cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="FechaHoraEntrada1">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!FechaHoraEntrada.Value, "Albaran")</Value>
+                <Style>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FechaHoraEntrada1</rd:DefaultName>
+        <Top>10.53578cm</Top>
+        <Left>2.27224cm</Left>
+        <Height>0.6cm</Height>
+        <Width>9.27263cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="RectanguloEntrada2">
+        <ReportItems>
+          <Image Name="Camara1Salida">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara1Salida.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12687cm</Top>
+            <Left>0.04749cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <Visibility>
+              <Hidden>=First(Fields!Camara1Salida.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Salida cámara 1</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Camara2Salida">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara2Salida.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12833cm</Top>
+            <Left>5.64514cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <ZIndex>1</ZIndex>
+            <Visibility>
+              <Hidden>=First(Fields!Camara2Salida.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Salida cámara 2</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Image Name="Camara3Salida">
+            <Source>External</Source>
+            <Value>=First(Fields!Camara3Salida.Value, "Albaran")</Value>
+            <Sizing>FitProportional</Sizing>
+            <Top>0.12833cm</Top>
+            <Left>11.21569cm</Left>
+            <Height>3.09cm</Height>
+            <Width>5.5cm</Width>
+            <ZIndex>2</ZIndex>
+            <Visibility>
+              <Hidden>=First(Fields!Camara3Salida.Value, "Albaran")=""</Hidden>
+            </Visibility>
+            <ToolTip>Salida cámara 3</ToolTip>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>15.40001cm</Top>
+        <Left>0.41069cm</Left>
+        <Height>3.34667cm</Height>
+        <Width>16.79027cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>Salida:</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>14.72945cm</Top>
+        <Left>0.41069cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.78562cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="FechaHoraEntrada2">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!FechaHoraSalida.Value, "Albaran")</Value>
+                <Style>
+                  <Format>f</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FechaHoraEntrada1</rd:DefaultName>
+        <Top>14.72945cm</Top>
+        <Left>2.28319cm</Left>
+        <Height>0.6cm</Height>
+        <Width>9.27263cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Rectangle Name="RectanguloFirmaInstalacion">
+        <ReportItems>
+          <Textbox Name="Textbox7">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=IIf(First(Fields!IdTipoOperacion.Value, "Albaran")=1, "FIRMA ORIGEN TRASLADO", "FIRMA DESTINO TRASLADO")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.53528cm</Top>
+            <Left>0.3175cm</Left>
+            <Height>0.56006cm</Height>
+            <Width>7.23628cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="FirmaProductor">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!FirmaProductor.Value, "Albaran")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>FirmaProductor</rd:DefaultName>
+            <Top>3.13062cm</Top>
+            <Left>0.3175cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.63701cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="FirmaProductorImagen">
+            <Source>Database</Source>
+            <Value>=First(Fields!FirmaProductorImagen.Value, "Albaran")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Left>2.20531cm</Left>
+            <Height>2.5cm</Height>
+            <Width>3.33123cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>18.97558cm</Top>
+        <Left>0.41069cm</Left>
+        <Height>3.73062cm</Height>
+        <Width>7.95451cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="RectanguloFirmaInstalacion2">
+        <ReportItems>
+          <Textbox Name="Textbox9">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>FIRMA TRANSPORTISTA</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox1</rd:DefaultName>
+            <Top>2.53062cm</Top>
+            <Left>0.3175cm</Left>
+            <Height>0.56472cm</Height>
+            <Width>6.81669cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="FirmaConductor">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!FirmaConductor.Value, "Albaran")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>FirmaConductor</rd:DefaultName>
+            <Top>3.13062cm</Top>
+            <Left>0.3175cm</Left>
+            <Height>0.6cm</Height>
+            <Width>7.30856cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Image Name="FirmaConductorImagen">
+            <Source>Database</Source>
+            <Value>=First(Fields!FirmaConductorImagen.Value, "Albaran")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>FitProportional</Sizing>
+            <Left>2.05148cm</Left>
+            <Height>2.5cm</Height>
+            <Width>3.33123cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>18.97558cm</Top>
+        <Left>9.56395cm</Left>
+        <Height>3.73062cm</Height>
+        <Width>7.63701cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+      <Textbox Name="MotivoMatriculaEntradaManual">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!MotivoMatriculaEntradaManual.Value, "Albaran")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>MotivoMatriculaEntradaManual</rd:DefaultName>
+        <Top>1.5058cm</Top>
+        <Left>6.43916cm</Left>
+        <Height>0.52861cm</Height>
+        <Width>10.68722cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="MotivoMatriculaSalidaManual">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!MotivoMatriculaSalidaManual.Value, "Albaran")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>MotivoMatriculaSalidaManual</rd:DefaultName>
+        <Top>2.28218cm</Top>
+        <Left>6.45011cm</Left>
+        <Height>0.49417cm</Height>
+        <Width>10.67627cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="MotivoPesoEntradaManual">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!MotivoPesoEntradaManual.Value, "Albaran")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>MotivoPesoEntradaManual</rd:DefaultName>
+        <Top>9.53037cm</Top>
+        <Left>0.25193cm</Left>
+        <Height>0.8643cm</Height>
+        <Width>5.02093cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="MotivoPesoSalidaManual">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!MotivoPesoSalidaManual.Value, "Albaran")</Value>
+                <Style>
+                  <FontStyle>Italic</FontStyle>
+                  <FontSize>8pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>MotivoPesoSalidaManual</rd:DefaultName>
+        <Top>9.53037cm</Top>
+        <Left>6.29523cm</Left>
+        <Height>0.8643cm</Height>
+        <Width>5.05435cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DATOS DEL TRANSPORTISTA</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>0.11177cm</Top>
+        <Left>0.46913cm</Left>
+        <Height>0.54708cm</Height>
+        <Width>6.83917cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="DatosEmpresa">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= "NOMBRE: " &amp; First(Fields!Empresa.Value, "Albaran") &amp; "  " &amp; First(Fields!EmpresaDireccion.Value, "Albaran") &amp; "  CIF: " &amp; First(Fields!EmpresaCIF.Value, "Albaran") &amp; "  NIMA: " &amp; First(Fields!EmpresaNIMA.Value, "Albaran")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>2.81163cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.93417cm</Height>
+        <Width>16.87445cm</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ORIGEN DEL TRASLADO</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>3.85163cm</Top>
+        <Left>0.48008cm</Left>
+        <Height>0.58235cm</Height>
+        <Width>5.1282cm</Width>
+        <ZIndex>26</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="DatosOrigenTraslado">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= First(Fields!Origen.Value, "Albaran") &amp; "  CIF: " &amp; First(Fields!OrigenCIF.Value, "Albaran") &amp; "  " &amp; First(Fields!OrigenDireccion.Value, "Albaran") &amp; "  NIMA: " &amp; First(Fields!OrigenNIMA.Value, "Albaran")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <Top>4.50454cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.93417cm</Height>
+        <Width>16.87445cm</Width>
+        <ZIndex>27</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>DESTINO DEL TRASLADO</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>5.50927cm</Top>
+        <Left>0.48008cm</Left>
+        <Height>0.58235cm</Height>
+        <Width>5.11725cm</Width>
+        <ZIndex>28</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox23">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= First(Fields!Destino.Value, "Albaran") &amp; " CIF: " &amp; First(Fields!DestinoCIF.Value, "Albaran") &amp; " " &amp; First(Fields!DestinoDireccion.Value, "Albaran") &amp; " NIMA: " &amp; First(Fields!DestinoNIMA.Value, "Albaran")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox23</rd:DefaultName>
+        <Top>6.1269cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.93417cm</Height>
+        <Width>16.87445cm</Width>
+        <ZIndex>29</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=IIf(First(Fields!IdTipoOperacion.Value, "Albaran")=1, "DATOS DEL RESIDUO QUE SE TRASLADA", "DATOS DEL PRODUCTO QUE SE TRASLADA")</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>7.13162cm</Top>
+        <Left>0.46913cm</Left>
+        <Height>0.54708cm</Height>
+        <Width>11.41646cm</Width>
+        <ZIndex>30</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox26">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>= "Descripción: " &amp; First(Fields!TipoCarga.Value, "Albaran") &amp; IIf(First(Fields!IdTipoOperacion.Value, "Albaran")=1, "  Código LER: " &amp; First(Fields!CodigoLER.Value, "Albaran"), "")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox26</rd:DefaultName>
+        <Top>7.74926cm</Top>
+        <Left>0.26288cm</Left>
+        <Height>0.93417cm</Height>
+        <Width>16.87445cm</Width>
+        <ZIndex>31</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>(Conforme albarán de origen)</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>3.85163cm</Top>
+        <Left>5.77372cm</Left>
+        <Height>0.58235cm</Height>
+        <Width>6.11187cm</Width>
+        <ZIndex>32</ZIndex>
+        <Visibility>
+          <Hidden>=First(Fields!IdTipoOperacion.Value, "Albaran")=1</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>(Conforme albarán de destino)</Value>
+                <Style>
+                  <FontSize>11pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox10</rd:DefaultName>
+        <Top>5.50927cm</Top>
+        <Left>5.77372cm</Left>
+        <Height>0.58235cm</Height>
+        <Width>6.11187cm</Width>
+        <ZIndex>33</ZIndex>
+        <Visibility>
+          <Hidden>=First(Fields!IdTipoOperacion.Value, "Albaran")=2</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>9.02154in</Height>
+    <Style>
+      <Border>
+        <Style>Solid</Style>
+        <Width>1.5pt</Width>
+      </Border>
+    </Style>
+  </Body>
+  <Width>6.875in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.60583cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="Logo">
+          <Source>Embedded</Source>
+          <Value>layout_set_logo</Value>
+          <Sizing>FitProportional</Sizing>
+          <Left>0.44723cm</Left>
+          <Height>1.60583cm</Height>
+          <Width>2.5cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </Image>
+        <Textbox Name="Textbox2">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Registro de Servicio de Báscula </Value>
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                  </Style>
+                </TextRun>
+                <TextRun>
+                  <Value>=First(Fields!NombreInstalacion.Value, "Albaran")</Value>
+                  <Style>
+                    <FontSize>12pt</FontSize>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox2</rd:DefaultName>
+          <Top>0.14499cm</Top>
+          <Left>3.30083cm</Left>
+          <Height>1.3797cm</Height>
+          <Width>13.8146cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <VerticalAlign>Middle</VerticalAlign>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>0.74083cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox6">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Nº operación local:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox6</rd:DefaultName>
+          <Top>0.07056cm</Top>
+          <Left>0.41069cm</Left>
+          <Height>0.6cm</Height>
+          <Width>3.55833cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="IdOperacion">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Sum(Fields!IdOperacion.Value, "Albaran")</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>IdOperacion</rd:DefaultName>
+          <Top>0.07056cm</Top>
+          <Left>4.14541cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox8">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Fecha traslado:</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Right</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox8</rd:DefaultName>
+          <Top>0.07056cm</Top>
+          <Left>11.39501cm</Left>
+          <Height>0.6cm</Height>
+          <Width>3.08208cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="FechaHoraEntrada">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=First(Fields!FechaHoraEntrada.Value, "Albaran")</Value>
+                  <Style>
+                    <Format>dd/MM/yyyy</Format>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Left</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>FechaHoraEntrada</rd:DefaultName>
+          <Top>0.07056cm</Top>
+          <Left>14.65347cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>3</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>1.5cm</RightMargin>
+    <TopMargin>1.5cm</TopMargin>
+    <BottomMargin>1.5cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DatosInformes">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>5e988199-7edc-4a59-aa6d-e57a3da98d57</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Albaran">
+      <Query>
+        <DataSourceName>DatosInformes</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IdOperacion">
+          <DataField>IdOperacion</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IdTipoOperacion">
+          <DataField>IdTipoOperacion</DataField>
+          <rd:TypeName>System.Byte</rd:TypeName>
+        </Field>
+        <Field Name="Matricula">
+          <DataField>Matricula</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MatriculaEntradaManual">
+          <DataField>MatriculaEntradaManual</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MotivoMatriculaEntradaManual">
+          <DataField>MotivoMatriculaEntradaManual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MatriculaSalidaManual">
+          <DataField>MatriculaSalidaManual</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MotivoMatriculaSalidaManual">
+          <DataField>MotivoMatriculaSalidaManual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Remolque">
+          <DataField>Remolque</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaHoraEntrada">
+          <DataField>FechaHoraEntrada</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PesoEntrada">
+          <DataField>PesoEntrada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PesoEntradaManual">
+          <DataField>PesoEntradaManual</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MotivoPesoEntradaManual">
+          <DataField>MotivoPesoEntradaManual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaHoraSalida">
+          <DataField>FechaHoraSalida</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PesoSalida">
+          <DataField>PesoSalida</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PesoSalidaManual">
+          <DataField>PesoSalidaManual</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="MotivoPesoSalidaManual">
+          <DataField>MotivoPesoSalidaManual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Empresa">
+          <DataField>Empresa</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpresaDireccion">
+          <DataField>EmpresaDireccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpresaCIF">
+          <DataField>EmpresaCIF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EmpresaNIMA">
+          <DataField>EmpresaNIMA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Conductor">
+          <DataField>Conductor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoCarga">
+          <DataField>TipoCarga</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodigoLER">
+          <DataField>CodigoLER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Origen">
+          <DataField>Origen</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrigenDireccion">
+          <DataField>OrigenDireccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrigenCIF">
+          <DataField>OrigenCIF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrigenNIMA">
+          <DataField>OrigenNIMA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Destino">
+          <DataField>Destino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DestinoDireccion">
+          <DataField>DestinoDireccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DestinoCIF">
+          <DataField>DestinoCIF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DestinoNIMA">
+          <DataField>DestinoNIMA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirmaProductor">
+          <DataField>FirmaProductor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirmaProductorImagen">
+          <DataField>FirmaProductorImagen</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="FirmaConductor">
+          <DataField>FirmaConductor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirmaConductorImagen">
+          <DataField>FirmaConductorImagen</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="Camara1Entrada">
+          <DataField>Camara1Entrada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Camara2Entrada">
+          <DataField>Camara2Entrada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Camara3Entrada">
+          <DataField>Camara3Entrada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Camara1Salida">
+          <DataField>Camara1Salida</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Camara2Salida">
+          <DataField>Camara2Salida</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Camara3Salida">
+          <DataField>Camara3Salida</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreInstalacion">
+          <DataField>NombreInstalacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DatosInformes</rd:DataSetName>
+        <rd:SchemaPath>C:\Desarrollo\Repos\creacontrol-cat\Go.ALPR.Sri.WinForms\DatosInformes.xsd</rd:SchemaPath>
+        <rd:TableName>Albaranes</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>AlbaranesTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="layout_set_logo">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAMQAAABcCAYAAAAxkxpFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RUY4N0JGNDk3MzkxMTFFNzk5Mzk5QTQ2MzU2RERCQTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RUY4N0JGNEE3MzkxMTFFNzk5Mzk5QTQ2MzU2RERCQTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFRjg3QkY0NzczOTExMUU3OTkzOTlBNDYzNTZE
+REJBMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFRjg3QkY0ODczOTExMUU3OTkzOTlBNDYzNTZEREJBMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqNvRRYAAB47SURBVHja7F0HmBRFFi6WJYlkEFFPyaKggIlBJRoO5RRE74AV856Ch4oHKOqIowzIwZlF0Vs5AywYwYABlSRIo6AL4ikIioCIKEhOsuy9v/sNW1NT3dMz2zM7u1+/76vd6VRd3f3+eqFevaogfPIpE2jeigL625a3uokubeaav8LG6fR3iXJ2exEM4HyRP2vRNPrXVzq2IOfCjp0iG1PvXjyI/j0lHd/ef0yH2uavvPyj6e/P0rGfs/wv4VMGgAGMeaq0Z7f0u1Gcq/+kbO9Stms4XFtP2T7gA8Inr5h6KJVqSV49mEoFafsH6XcbzfnbEwBEA4f7Hq1s7/AB4ZNX1JRKMAkgtaK/w6Q935K69Ju03Um5oojKJlaX6mkA8bOyfZwDmE5Qjm31AeGTV/QKlbuIwa9MAAwN6e87VKpIe6cd/hU2jqS/3ZWr1pH9sJd/n6mp9Ttlu4Wy/av0u7FybLMPCJ+8oS5t5tHfxVReJEZ/gErlOGA4l/5+TqWZrLJQmSBt51Cpqly5SPp9rqbmbySDGvx9onJ8k4M6tjHb/5I+eUi5wvII3UtlADH9RPr/HpWVVAqpNGQV6CoqPTXXDzusLoUN8OYQzTkfSr8v1RxfJv1uSeVI5fj30u9TlGNrfAnhk5dS4mv6ez2VQ1SaUPkXleVU9lM5SOUnVol0YHiSrv+PtH0dlZOUcw5Qmc72QzMNQy/LubCjrBJ11Nxnlfk3L7+2Ip1Aq31A+OQ1KKbS395Utri84hBLlFsl2+FY+jtec+7rZD/8LgFGpbnKdncHCQKwVFCOfeUDwqdUgOJt1s8f
+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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>a58065e4-307c-492d-a6df-c6bb6d5df72e</rd:ReportID>
+</Report>

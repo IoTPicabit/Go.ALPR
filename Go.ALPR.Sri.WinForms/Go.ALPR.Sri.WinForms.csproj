@@ -1,0 +1,109 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="pdfium-binary\**" />
+    <EmbeddedResource Remove="pdfium-binary\**" />
+    <None Remove="pdfium-binary\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Classes\TransparentPictureBox.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Albaran.rdlc" />
+    <None Remove="Carta.rdlc" />
+    <None Remove="nlog.config" />
+    <None Remove="NLog.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Albaran.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Carta.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="LibVLCSharp" Version="3.5.1" />
+    <PackageReference Include="LibVLCSharp.WinForms" Version="3.5.1" />
+    <PackageReference Include="MailKit" Version="2.13.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="NLog.Extensions.Logging" Version="1.7.2" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.14" />
+    <PackageReference Include="X.PagedList" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Go.ALPR.Sri.Business\Go.ALPR.Sri.Business.csproj" />
+    <ProjectReference Include="..\Go.ALPR.Sri.PlcComm\Go.ALPR.Sri.PlcComm.csproj" />
+    <ProjectReference Include="..\Go.ALPR.Sri.Printer\Go.ALPR.Sri.Printer.csproj" />
+    <ProjectReference Include="..\Go.ALPR.Sri.Signature\Go.ALPR.Sri.Signature.csproj" />
+    <ProjectReference Include="..\Go.ALPR.Sri.SqlServer\Go.ALPR.Sri.SqlServer.csproj" />
+    <ProjectReference Include="..\MiniMVPNetCore\MiniMVPNetCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DatosInformes.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DatosInformes.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Views\frmContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmControlAcceso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\frmOperaciones.cs" />
+    <Compile Update="Views\frmTransportes.cs" />
+    <Compile Update="Views\frmEmpresas.cs" />
+    <Compile Update="Views\frmLocalizaciones.cs" />
+    <Compile Update="Views\frmTipoCargas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="DatosInformes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosInformes.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+</Project>

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AlbaranDS" targetNamespace="http://tempuri.org/AlbaranDS.xsd" xmlns:mstns="http://tempuri.org/AlbaranDS.xsd" xmlns="http://tempuri.org/AlbaranDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=SRI;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="SRIConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AlbaranesTableAdapter" GeneratorDataComponentClassName="AlbaranesTableAdapter" Name="Albaranes" UserDataComponentName="AlbaranesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SRIConnectionString" DbObjectName="SRI.dbo.Albaranes" DbObjectType="Function" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdOperacion, IdTipoOperacion, Matricula, MatriculaEntradaManual, MotivoMatriculaEntradaManual, MatriculaSalidaManual, MotivoMatriculaSalidaManual, Remolque, FechaHoraEntrada, PesoEntrada, PesoEntradaManual, MotivoPesoEntradaManual, FechaHoraSalida, PesoSalida, PesoSalidaManual, MotivoPesoSalidaManual, Empresa, Conductor, TipoCarga, CodigoLER, Origen, Destino, FirmaProductor, FirmaConductor, Camara1Entrada, Camara2Entrada, Camara3Entrada, Camara1Salida, Camara2Salida, Camara3Salida FROM dbo.Albaranes()</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdOperacion" DataSetColumn="IdOperacion" />
+              <Mapping SourceColumn="IdTipoOperacion" DataSetColumn="IdTipoOperacion" />
+              <Mapping SourceColumn="Matricula" DataSetColumn="Matricula" />
+              <Mapping SourceColumn="MatriculaEntradaManual" DataSetColumn="MatriculaEntradaManual" />
+              <Mapping SourceColumn="MotivoMatriculaEntradaManual" DataSetColumn="MotivoMatriculaEntradaManual" />
+              <Mapping SourceColumn="MatriculaSalidaManual" DataSetColumn="MatriculaSalidaManual" />
+              <Mapping SourceColumn="MotivoMatriculaSalidaManual" DataSetColumn="MotivoMatriculaSalidaManual" />
+              <Mapping SourceColumn="Remolque" DataSetColumn="Remolque" />
+              <Mapping SourceColumn="FechaHoraEntrada" DataSetColumn="FechaHoraEntrada" />
+              <Mapping SourceColumn="PesoEntrada" DataSetColumn="PesoEntrada" />
+              <Mapping SourceColumn="PesoEntradaManual" DataSetColumn="PesoEntradaManual" />
+              <Mapping SourceColumn="MotivoPesoEntradaManual" DataSetColumn="MotivoPesoEntradaManual" />
+              <Mapping SourceColumn="FechaHoraSalida" DataSetColumn="FechaHoraSalida" />
+              <Mapping SourceColumn="PesoSalida" DataSetColumn="PesoSalida" />
+              <Mapping SourceColumn="PesoSalidaManual" DataSetColumn="PesoSalidaManual" />
+              <Mapping SourceColumn="MotivoPesoSalidaManual" DataSetColumn="MotivoPesoSalidaManual" />
+              <Mapping SourceColumn="Empresa" DataSetColumn="Empresa" />
+              <Mapping SourceColumn="Conductor" DataSetColumn="Conductor" />
+              <Mapping SourceColumn="TipoCarga" DataSetColumn="TipoCarga" />
+              <Mapping SourceColumn="CodigoLER" DataSetColumn="CodigoLER" />
+              <Mapping SourceColumn="Origen" DataSetColumn="Origen" />
+              <Mapping SourceColumn="Destino" DataSetColumn="Destino" />
+              <Mapping SourceColumn="FirmaProductor" DataSetColumn="FirmaProductor" />
+              <Mapping SourceColumn="FirmaConductor" DataSetColumn="FirmaConductor" />
+              <Mapping SourceColumn="Camara1Entrada" DataSetColumn="Camara1Entrada" />
+              <Mapping SourceColumn="Camara2Entrada" DataSetColumn="Camara2Entrada" />
+              <Mapping SourceColumn="Camara3Entrada" DataSetColumn="Camara3Entrada" />
+              <Mapping SourceColumn="Camara1Salida" DataSetColumn="Camara1Salida" />
+              <Mapping SourceColumn="Camara2Salida" DataSetColumn="Camara2Salida" />
+              <Mapping SourceColumn="Camara3Salida" DataSetColumn="Camara3Salida" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AlbaranDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AlbaranDS" msprop:Generator_UserDSName="AlbaranDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Albaranes" msprop:Generator_TableClassName="AlbaranesDataTable" msprop:Generator_TableVarName="tableAlbaranes" msprop:Generator_TablePropName="Albaranes" msprop:Generator_RowDeletingName="AlbaranesRowDeleting" msprop:Generator_RowChangingName="AlbaranesRowChanging" msprop:Generator_RowEvHandlerName="AlbaranesRowChangeEventHandler" msprop:Generator_RowDeletedName="AlbaranesRowDeleted" msprop:Generator_UserTableName="Albaranes" msprop:Generator_RowChangedName="AlbaranesRowChanged" msprop:Generator_RowEvArgName="AlbaranesRowChangeEvent" msprop:Generator_RowClassName="AlbaranesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdOperacion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnIdOperacion" msprop:Generator_ColumnPropNameInRow="IdOperacion" msprop:Generator_ColumnPropNameInTable="IdOperacionColumn" msprop:Generator_UserColumnName="IdOperacion" type="xs:decimal" />
+              <xs:element name="IdTipoOperacion" msprop:Generator_ColumnVarNameInTable="columnIdTipoOperacion" msprop:Generator_ColumnPropNameInRow="IdTipoOperacion" msprop:Generator_ColumnPropNameInTable="IdTipoOperacionColumn" msprop:Generator_UserColumnName="IdTipoOperacion" type="xs:unsignedByte" />
+              <xs:element name="Matricula" msprop:Generator_ColumnVarNameInTable="columnMatricula" msprop:Generator_ColumnPropNameInRow="Matricula" msprop:Generator_ColumnPropNameInTable="MatriculaColumn" msprop:Generator_UserColumnName="Matricula">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MatriculaEntradaManual" msprop:Generator_ColumnVarNameInTable="columnMatriculaEntradaManual" msprop:Generator_ColumnPropNameInRow="MatriculaEntradaManual" msprop:Generator_ColumnPropNameInTable="MatriculaEntradaManualColumn" msprop:Generator_UserColumnName="MatriculaEntradaManual" type="xs:boolean" />
+              <xs:element name="MotivoMatriculaEntradaManual" msprop:Generator_ColumnVarNameInTable="columnMotivoMatriculaEntradaManual" msprop:Generator_ColumnPropNameInRow="MotivoMatriculaEntradaManual" msprop:Generator_ColumnPropNameInTable="MotivoMatriculaEntradaManualColumn" msprop:Generator_UserColumnName="MotivoMatriculaEntradaManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MatriculaSalidaManual" msprop:Generator_ColumnVarNameInTable="columnMatriculaSalidaManual" msprop:Generator_ColumnPropNameInRow="MatriculaSalidaManual" msprop:Generator_ColumnPropNameInTable="MatriculaSalidaManualColumn" msprop:Generator_UserColumnName="MatriculaSalidaManual" type="xs:boolean" />
+              <xs:element name="MotivoMatriculaSalidaManual" msprop:Generator_ColumnVarNameInTable="columnMotivoMatriculaSalidaManual" msprop:Generator_ColumnPropNameInRow="MotivoMatriculaSalidaManual" msprop:Generator_ColumnPropNameInTable="MotivoMatriculaSalidaManualColumn" msprop:Generator_UserColumnName="MotivoMatriculaSalidaManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remolque" msprop:Generator_ColumnVarNameInTable="columnRemolque" msprop:Generator_ColumnPropNameInRow="Remolque" msprop:Generator_ColumnPropNameInTable="RemolqueColumn" msprop:Generator_UserColumnName="Remolque" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaHoraEntrada" msprop:Generator_ColumnVarNameInTable="columnFechaHoraEntrada" msprop:Generator_ColumnPropNameInRow="FechaHoraEntrada" msprop:Generator_ColumnPropNameInTable="FechaHoraEntradaColumn" msprop:Generator_UserColumnName="FechaHoraEntrada" type="xs:dateTime" />
+              <xs:element name="PesoEntrada" msprop:Generator_ColumnVarNameInTable="columnPesoEntrada" msprop:Generator_ColumnPropNameInRow="PesoEntrada" msprop:Generator_ColumnPropNameInTable="PesoEntradaColumn" msprop:Generator_UserColumnName="PesoEntrada" type="xs:int" />
+              <xs:element name="PesoEntradaManual" msprop:Generator_ColumnVarNameInTable="columnPesoEntradaManual" msprop:Generator_ColumnPropNameInRow="PesoEntradaManual" msprop:Generator_ColumnPropNameInTable="PesoEntradaManualColumn" msprop:Generator_UserColumnName="PesoEntradaManual" type="xs:boolean" />
+              <xs:element name="MotivoPesoEntradaManual" msprop:Generator_ColumnVarNameInTable="columnMotivoPesoEntradaManual" msprop:Generator_ColumnPropNameInRow="MotivoPesoEntradaManual" msprop:Generator_ColumnPropNameInTable="MotivoPesoEntradaManualColumn" msprop:Generator_UserColumnName="MotivoPesoEntradaManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaHoraSalida" msprop:Generator_ColumnVarNameInTable="columnFechaHoraSalida" msprop:Generator_ColumnPropNameInRow="FechaHoraSalida" msprop:Generator_ColumnPropNameInTable="FechaHoraSalidaColumn" msprop:Generator_UserColumnName="FechaHoraSalida" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PesoSalida" msprop:Generator_ColumnVarNameInTable="columnPesoSalida" msprop:Generator_ColumnPropNameInRow="PesoSalida" msprop:Generator_ColumnPropNameInTable="PesoSalidaColumn" msprop:Generator_UserColumnName="PesoSalida" type="xs:int" minOccurs="0" />
+              <xs:element name="PesoSalidaManual" msprop:Generator_ColumnVarNameInTable="columnPesoSalidaManual" msprop:Generator_ColumnPropNameInRow="PesoSalidaManual" msprop:Generator_ColumnPropNameInTable="PesoSalidaManualColumn" msprop:Generator_UserColumnName="PesoSalidaManual" type="xs:boolean" />
+              <xs:element name="MotivoPesoSalidaManual" msprop:Generator_ColumnVarNameInTable="columnMotivoPesoSalidaManual" msprop:Generator_ColumnPropNameInRow="MotivoPesoSalidaManual" msprop:Generator_ColumnPropNameInTable="MotivoPesoSalidaManualColumn" msprop:Generator_UserColumnName="MotivoPesoSalidaManual" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Empresa" msprop:Generator_ColumnVarNameInTable="columnEmpresa" msprop:Generator_ColumnPropNameInRow="Empresa" msprop:Generator_ColumnPropNameInTable="EmpresaColumn" msprop:Generator_UserColumnName="Empresa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Conductor" msprop:Generator_ColumnVarNameInTable="columnConductor" msprop:Generator_ColumnPropNameInRow="Conductor" msprop:Generator_ColumnPropNameInTable="ConductorColumn" msprop:Generator_UserColumnName="Conductor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TipoCarga" msprop:Generator_ColumnVarNameInTable="columnTipoCarga" msprop:Generator_ColumnPropNameInRow="TipoCarga" msprop:Generator_ColumnPropNameInTable="TipoCargaColumn" msprop:Generator_UserColumnName="TipoCarga" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodigoLER" msprop:Generator_ColumnVarNameInTable="columnCodigoLER" msprop:Generator_ColumnPropNameInRow="CodigoLER" msprop:Generator_ColumnPropNameInTable="CodigoLERColumn" msprop:Generator_UserColumnName="CodigoLER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="7" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Origen" msprop:Generator_ColumnVarNameInTable="columnOrigen" msprop:Generator_ColumnPropNameInRow="Origen" msprop:Generator_ColumnPropNameInTable="OrigenColumn" msprop:Generator_UserColumnName="Origen" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destino" msprop:Generator_ColumnVarNameInTable="columnDestino" msprop:Generator_ColumnPropNameInRow="Destino" msprop:Generator_ColumnPropNameInTable="DestinoColumn" msprop:Generator_UserColumnName="Destino" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirmaProductor" msprop:Generator_ColumnVarNameInTable="columnFirmaProductor" msprop:Generator_ColumnPropNameInRow="FirmaProductor" msprop:Generator_ColumnPropNameInTable="FirmaProductorColumn" msprop:Generator_UserColumnName="FirmaProductor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirmaConductor" msprop:Generator_ColumnVarNameInTable="columnFirmaConductor" msprop:Generator_ColumnPropNameInRow="FirmaConductor" msprop:Generator_ColumnPropNameInTable="FirmaConductorColumn" msprop:Generator_UserColumnName="FirmaConductor" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara1Entrada" msprop:Generator_ColumnVarNameInTable="columnCamara1Entrada" msprop:Generator_ColumnPropNameInRow="Camara1Entrada" msprop:Generator_ColumnPropNameInTable="Camara1EntradaColumn" msprop:Generator_UserColumnName="Camara1Entrada" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara2Entrada" msprop:Generator_ColumnVarNameInTable="columnCamara2Entrada" msprop:Generator_ColumnPropNameInRow="Camara2Entrada" msprop:Generator_ColumnPropNameInTable="Camara2EntradaColumn" msprop:Generator_UserColumnName="Camara2Entrada" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara3Entrada" msprop:Generator_ColumnVarNameInTable="columnCamara3Entrada" msprop:Generator_ColumnPropNameInRow="Camara3Entrada" msprop:Generator_ColumnPropNameInTable="Camara3EntradaColumn" msprop:Generator_UserColumnName="Camara3Entrada" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara1Salida" msprop:Generator_ColumnVarNameInTable="columnCamara1Salida" msprop:Generator_ColumnPropNameInRow="Camara1Salida" msprop:Generator_ColumnPropNameInTable="Camara1SalidaColumn" msprop:Generator_UserColumnName="Camara1Salida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara2Salida" msprop:Generator_ColumnVarNameInTable="columnCamara2Salida" msprop:Generator_ColumnPropNameInRow="Camara2Salida" msprop:Generator_ColumnPropNameInTable="Camara2SalidaColumn" msprop:Generator_UserColumnName="Camara2Salida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Camara3Salida" msprop:Generator_ColumnVarNameInTable="columnCamara3Salida" msprop:Generator_ColumnPropNameInRow="Camara3Salida" msprop:Generator_ColumnPropNameInTable="Camara3SalidaColumn" msprop:Generator_UserColumnName="Camara3Salida" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Albaranes" />
+      <xs:field xpath="mstns:IdOperacion" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

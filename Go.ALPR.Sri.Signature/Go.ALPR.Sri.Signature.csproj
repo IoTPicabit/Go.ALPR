@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Florentis.InteropFlSigCapt">
+      <HintPath>..\Florentis.InteropFlSigCapt.dll</HintPath>
+    </Reference>
+    <Reference Include="Florentis.InteropFlSigCOM">
+      <HintPath>..\Florentis.InteropFlSigCOM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

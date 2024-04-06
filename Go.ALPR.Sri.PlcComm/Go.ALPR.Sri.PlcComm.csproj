@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ClxDriver.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ClxDriver.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Go.ALPR.Sri.Common\Go.ALPR.Sri.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ClxDriver">
+      <HintPath>ClxDriver.dll</HintPath>
+      <Aliases>global</Aliases>
+      <Private>true</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <SpecificVersion>false</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="plcsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
